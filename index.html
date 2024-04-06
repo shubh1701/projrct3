@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vihangam Yoga</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Additional CSS for the image slideshow */
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 50vh; /* 50% of viewport height */
+            overflow: hidden;
+            display: flex;
+        }
+
+        .slideshow-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: none; /* Hide all images by default */
+        }
+
+        .slideshow-container img:first-child {
+            display: block; /* Display the first image initially */
+        }
+
+        .slideshow-container .text {
+            width: 50%;
+            background-color: #f1f1f1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            z-index: 100;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+    
+    right: 0px;
+    
+}
+
+
+        @media only screen and (max-width: 768px) {
+            .slideshow-container {
+                height: auto;
+            }
+
+            .slideshow-container .text {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="#"><img src="logo.png" alt="Vihangam Yoga"></a>
+                </div>
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <!-- Add more menu items as needed -->
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="#" class="icon"><i class="fa fa-search"></i></a>
+                    <a href="#" class="icon"><i class="fa fa-user"></i></a>
+                    <a href="#" class="menu-icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <h1>Welcome to Vihangam Yoga</h1>
+                <p>Discover the power of yoga</p>
+                <a href="contact.html" class="btn">Join Now</a>
+            </div>
+        </div>
+    </header>
+
+    <h2>Our Instructors</h2>
+    <h3>Niraj</h3>
+
+    <div class="slideshow-container">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <div class="text">
+            <h2>Image Description</h2>
+            <p>Description.</p>
+        </div>
+        <button class="prev" onclick="plusSlides(-1)">❮ Prev</button>
+        <button class="next" onclick="plusSlides(1)">Next ❯</button>
+    </div>
+    <p>Description v Description v v v vDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription.</p>
+    
+
+
+
+
+
+
+
+    <h3>Yudhisthir</h3>
+
+    <div class="slideshow-container">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <div class="text">
+            <h2>Image Description</h2>
+            <p>Description.</p>
+        </div>
+        <button class="prev" onclick="plusSlides(-1)">❮ Prev</button>
+        <button class="next" onclick="plusSlides(1)">Next ❯</button>
+    </div>
+    <p>Description v Description v v v vDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription.</p>
+    
+
+
+    <h3>Suresh</h3>
+
+    <div class="slideshow-container">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <div class="text">
+            <h2>Image Description</h2>
+            <p>Description.</p>
+        </div>
+        <button class="prev" onclick="plusSlides(-1)">❮ Prev</button>
+        <button class="next" onclick="plusSlides(1)">Next ❯</button>
+    </div>
+    <p>Description v Description v v v vDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription.</p>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="hero">
+        <div class="container">
+            <!-- Hero section content here -->
+            <h2>Discover the power of yoga</h2>
+            <p>Join our classes and start your journey to a healthier mind and body.</p>
+            <a href="contact.html" class="btn">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Add more sections as needed -->
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat justo et posuere.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Centers</h3>
+                    <ul>
+                        <li><a href="#">https://maps.app.goo.gl/p4KRG6wGZLiDhf6B6</a></li>
+                        <li><a href="#">https://maps.app.goo.gl/4SoKoFfcUYKb38ba6</a></li>
+                        <li><a href="#">https://maps.app.goo.gl/7MSqpZ7q8KYHVqAB7</a></li>
+                        <li><a href="#">https://maps.app.goo.gl/4fNEr8fEENmWoBLm9</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>123 Street, City</p>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +1234567890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vihangam Yoga. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+
+<script src="script.js"></script>
+</body>
+</html>

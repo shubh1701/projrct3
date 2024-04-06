@@ -1,0 +1,325 @@
+/* General styles for the header */
+header {
+    background-color: #ffffff; /* Background color of the header */
+    padding: 20px 0; /* Padding around the header content */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Drop shadow for a subtle effect */
+}
+
+.container {
+    max-width: 1200px; /* Maximum width of the header content */
+    margin: 0 auto; /* Center align the header content */
+}
+
+/* Styles for the top section of the header */
+.header-top {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space evenly between items */
+}
+
+.logo img {
+    max-width: 150px; /* Maximum width of the logo */
+}
+
+.main-menu ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 1cm 0 0 0; /* 1 centimeter gap from the top */
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 1.5cm; /* 1.5 centimeter gap from the right */
+}
+
+.main-menu ul li {
+    display: inline-block; /* Display menu items horizontally */
+    margin-right: 20px; /* Add spacing between menu items */
+}
+
+.main-menu ul li:last-child {
+    margin-right: 0; /* Remove margin from the last menu item */
+}
+
+.main-menu ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333333; /* Text color of the menu items */
+    font-weight: bold; /* Bold font weight for menu items */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.main-menu ul li a:hover {
+    color: #ff6600; /* Change text color on hover */
+}
+
+.header-icons .icon {
+    margin-left: 20px; /* Add spacing between icon links */
+    color: #333333; /* Icon color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.header-icons .icon:hover {
+    color: #ff6600; /* Change icon color on hover */
+}
+
+/* Styles for the bottom section of the header */
+.header-bottom {
+    text-align: center; /* Center align the content */
+    margin-top: 0cm; /* Set margin from the top to 2 centimeters */
+}
+
+.header-bottom h1 {
+    color: #333333; /* Header bottom text color */
+    font-size: 36px; /* Font size of the header text */
+    margin-bottom: 10px; /* Add space below the header text */
+}
+
+.header-bottom p {
+    color: #666666; /* Description text color */
+    font-size: 18px; /* Font size of the description text */
+    margin-bottom: 20px; /* Add space below the description text */
+}
+
+.btn {
+    background-color: #ff6600; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius to button */
+    font-size: 16px; /* Font size of the button text */
+    text-transform: uppercase; /* Convert button text to uppercase */
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+.btn:hover {
+    background-color: #cc5500; /* Change button background color on hover */
+}
+
+/* Media query for small screen devices */
+@media only screen and (max-width: 768px) {
+    .main-menu ul {
+        display: none; /* Hide the main menu by default on small screens */
+    }
+    
+    .header-icons {
+        display: flex; /* Use flexbox for layout */
+        align-items: center; /* Align items vertically */
+    }
+
+    .header-icons .icon {
+        margin-left: 10px; /* Adjust spacing between icon links */
+    }
+}
+
+
+/* Add this at the end of your CSS */
+
+.menu-icon {
+    display: none; /* Hide menu icon by default */
+    margin-left: 20px; /* Add spacing between menu icon and other icons */
+}
+
+/* Media query for small screen devices */
+@media only screen and (max-width: 768px) {
+    .main-menu ul {
+        display: none; /* Hide the main menu by default on small screens */
+    }
+    
+    .menu-icon {
+        display: block; /* Show menu icon on small screens */
+    }
+
+    .header-icons {
+        display: flex; /* Use flexbox for layout */
+        align-items: center; /* Align items vertically */
+    }
+
+    .header-icons .icon {
+        margin-left: 10px; /* Adjust spacing between icon links */
+    }
+}
+
+
+
+
+
+/* General styles for the footer */
+footer {
+    background-color: #f8f9fa; /* Background color of the footer */
+    padding: 40px 0; /* Padding around the footer content */
+    color: #333333; /* Text color of the footer */
+}
+
+.container {
+    max-width: 1200px; /* Maximum width of the footer content */
+    margin: 0 auto; /* Center align the footer content */
+}
+
+/* Styles for the footer content */
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space evenly between items */
+    flex-wrap: wrap; /* Wrap items to the next line if necessary */
+}
+
+.footer-column {
+    flex: 1; /* Equal width for each column */
+    margin-right: 20px; /* Add spacing between columns */
+}
+
+.footer-column:last-child {
+    margin-right: 0; /* Remove margin from the last column */
+}
+
+.footer-column h3 {
+    color: #333333; /* Header text color */
+    font-size: 20px; /* Font size of the header text */
+    margin-bottom: 10px; /* Add space below the header text */
+}
+
+.footer-column p {
+    font-size: 16px; /* Font size of the paragraph text */
+    line-height: 1.6; /* Line height for better readability */
+}
+
+.footer-column ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+.footer-column ul li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Add space between content and bottom */
+    text-align: center; /* Center align the content */
+}
+
+.footer-bottom p {
+    font-size: 14px; /* Font size of the footer text */
+}
+
+/* Responsive styles */
+
+
+
+/* Default styles for desktop */
+/* Add your desktop-specific styles here */
+
+/* Tablet styles */
+
+
+/* Mobile styles */
+@media only screen and (max-width: 480px) {
+    /* Adjustments for mobile devices */
+    header {
+        padding: 10px;
+        text-align: center; /* Center align header content */
+    }
+    .hero {
+        padding: 20px 10px; /* Increase top and bottom padding */
+    }
+    .content {
+        padding: 20px 10px; /* Increase top and bottom padding */
+    }
+    footer {
+        text-align: center; /* Center align footer content */
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .footer-column {
+        flex: 1 0 100%; /* Full width for each column on small screens */
+        margin-right: 0; /* Remove margin between columns */
+        margin-bottom: 20px; /* Add space between columns */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact us form  css*/
+
+/* Style for form container */
+.form-container {
+    max-width: 400px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center align the form */
+    padding: 20px;
+    background-color: #f9f9f9; /* Form background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+/* Style for form labels */
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style for form input fields */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Style for form textarea */
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Style for form submit button */
+.form-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #ff6600; /* Button background color */
+    color: #fff; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+}
+
+/* Style for form submit button on hover */
+.form-submit:hover {
+    background-color: #cc5500; /* Button background color on hover */
+}
+
+
